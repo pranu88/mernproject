@@ -6,7 +6,8 @@ function Header() {
   return (
     <div className='header'>
         <h1>B-Blog</h1>
-        <div className='styles.links'>
+        <div className='.links'>
+        
         <Link style= {{textDecoration:"none", color:"inherit",margin:"1em",fontWeight:"bold"}} to="/Login">Login</Link>
         <Link style= {{textDecoration:"none", color:"inherit",fontWeight:"bold",margin:"1em"}} to="/Register">Register</Link>
         </div>
