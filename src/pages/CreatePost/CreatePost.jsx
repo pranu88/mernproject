@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 
 function CreatePost() {
+    const [title, setTitle] = useState('')
+
   return (
-    <div>CreatePost
-        
+    <div>
+create
     </div>
   )
 }

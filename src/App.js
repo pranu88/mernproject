@@ -1,23 +1,25 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { getUser } from "./utilities/users-service";
 import AuthPage from "./pages/AuthPage/AuthPage.jsx";
 
-import Navbar from "./components/Navbar";
-import Header from "./components/Header/Header.jsx";
+import Navbar from "./components/Navbar.jsx";
+
 import LoginForm from "./components/LoginForm/LoginForm.jsx";
 import SignUpForm from "./components/SignUpForm/SignUpForm.jsx";
-import CreatePost from "./pages/CreatePost/CreatePost.jsx";
+
+
+
 
 
 function App() {
   const [user, setUser] = useState(getUser());
   return (
     <div className="App">
-       <Header/>
-      {/* {user ? (
+     
+       {user ? (
         <>
           <Navbar user={user} setUser={setUser} />
           <Routes>
@@ -27,13 +29,18 @@ function App() {
         </>
       ) : (
         <AuthPage user={user} setUser={setUser}/>
-      )} */}
+      )}
 
-         <Routes>
+
+
+         {/* <Routes>
+          <Route path="/" element={<Layout/>} >
+          <Route index element={<Post/>} />
            <Route path="/create" element={<CreatePost />} />
-           <Route path="/Login" element ={user ? <Navbar user={user} setUser={setUser}/> :<LoginForm/>}/>
-           <Route path="/Register" element ={<SignUpForm/>}/>
-          </Routes>
+           <Route path="/Login" element ={<LoginForm/>}/>
+           <Route path="/Register" element ={<SignUpForm />}/>
+           </Route>
+          </Routes> */}
 
 
     </div>
