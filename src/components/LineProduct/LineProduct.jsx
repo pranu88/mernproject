@@ -3,7 +3,7 @@ import  './LineProduct.css';
 export default function LineProduct({ lineProduct, isPaid, handleChangeQty }) {
 return (
   <div className='LineProduct'>
-    <img className="flex-ctr-ctr" src={lineProduct.product.img}/>
+    <img  style={{width:'10em',height:'10em'}} src={lineProduct.product.img}/>
     <div className="flex-ctr-ctr flex-col">
       <span className="align-ctr">{lineProduct.product.name}</span>
       {/* <span>{lineProduct.product.price.toFixed(2)}</span> */}
@@ -12,14 +12,14 @@ return (
     <div className='qty' style={{ justifyContent: isPaid && 'center' }}>
       {!isPaid &&
         <button
-          className="btn-xs"
+          className="btnminus"
           onClick={() => handleChangeQty(lineProduct.product._id, lineProduct.qty - 1)}
         >-</button>
       }
       <span>{lineProduct.qty}</span>
       {!isPaid &&
         <button
-          className="btn-xs"
+          className="btnplus"
           onClick={() => handleChangeQty(lineProduct.product._id, lineProduct.qty + 1)}
         >+</button>
       }

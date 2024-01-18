@@ -1,6 +1,6 @@
 .LineProduct {
     width: 100%;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
     padding: 1vmin 0;
     color: var(--text-light);
@@ -29,4 +29,11 @@
     
     .LineProduct button {
     margin: 0;
+    }
+
+    .LineProduct .qty .btnminus{
+        margin-left: auto;
+    }
+    .LineProduct .qty .btnplus{
+        margin-right: auto;
     }
