@@ -22,6 +22,7 @@ function Navbar({user ,setUser}) {
         <Link to="/orders/new" className="link">Home</Link> 
         <Link to="/orders" className="link">Order History</Link> 
         {/* <Link to="" onClick={handleLogOut}><button>Log-Out</button></Link> */}
+        <Link to="/cart" className="link">Cart </Link>
         <UserLogOut user={user} setUser={setUser} />
         </div>
       </nav>

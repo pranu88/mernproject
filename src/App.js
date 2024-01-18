@@ -11,7 +11,7 @@ import LoginForm from "./components/LoginForm/LoginForm.jsx";
 import SignUpForm from "./components/SignUpForm/SignUpForm.jsx";
 import OrderHistoryPage from "./pages/OrderHistoryPage/OrderHistoryPage.jsx";
 import NewOrderPage from "./pages/NewOrderPage/NewOrderPage.jsx";
-
+import Cart from "./pages/Cart/Cart.jsx";
 
 
 
@@ -32,6 +32,7 @@ function App() {
 
             <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
             <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
+            <Route path='/cart' element={<Cart user={user} setUser={setUser} />} />
             <Route path="/*" element={<Navigate to="/orders/new" />} />
           </Routes>
         </>
