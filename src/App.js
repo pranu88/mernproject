@@ -6,7 +6,7 @@ import { getUser } from "./utilities/users-service";
 import AuthPage from "./pages/AuthPage/AuthPage.jsx";
 
 import Navbar from "./components/Navbar.jsx";
-
+import Header from "./components/Header/Header.jsx";
 import LoginForm from "./components/LoginForm/LoginForm.jsx";
 import SignUpForm from "./components/SignUpForm/SignUpForm.jsx";
 import OrderHistoryPage from "./pages/OrderHistoryPage/OrderHistoryPage.jsx";
@@ -20,6 +20,9 @@ function App() {
   return (
     <div className="App">
      
+<Header/>
+
+
        {user ? (
         <>
           <Navbar user={user} setUser={setUser} />

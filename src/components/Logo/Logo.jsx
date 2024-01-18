@@ -1,8 +1,8 @@
-import styles from './Logo.css';
+import  './Logo.css';
 
 export default function Logo() {
 return (
-  <div className={styles.Logo}>
+  <div className='Logo'>
     <div>MERN</div>
     <div>MART</div>
   </div>
