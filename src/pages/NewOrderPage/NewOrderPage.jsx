@@ -64,7 +64,7 @@ export default function NewOrderPage({ user, setUser }) {
           setActiveCat={setActiveCat}
         />
         <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
-        <UserLogOut user={user} setUser={setUser} />
+        {/* <UserLogOut user={user} setUser={setUser} /> */}
       </aside>
       <MenuList
         menuProducts={menuProducts.filter(product => product.category.name === activeCat)}
