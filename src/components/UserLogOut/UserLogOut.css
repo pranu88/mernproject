@@ -1,9 +1,21 @@
 .UserLogOut {
-    font-size: 1.5vmin;
-    color: var(--text-light);
+    font-size: 2.5vmin;
+    /* color: var(--text-light); */
+    color: inherit;
     text-align: center;
     }
     
     .UserLogOut .email {
       font-size: smaller;
+    }
+    .UserLogOut .logout-btn{
+      color: black;
+      font-weight: bold;
+      border:'solid var(--tan-2)'
+    }
+     .UserLogOut .logout-btn:hover{
+      color: black;
+      font-weight: bold;
+      border:'solid var(--tan-2)';
+      background-color: white;
     }

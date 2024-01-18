@@ -1,5 +1,37 @@
-.navbar{
-    display: "flex" ;
-     justify-content: "space-between";
-        
+.nav{
+    display: flex ;
+     justify-content: space-between;
+      background-color: white;
+      margin-top: 1em;
+      width: 100%; 
+      padding: 10px; 
+}
+
+.nav .navlinks{
+    display:flex;
+    justify-content:space-around;
+}
+
+.nav .navlinks .link{
+    margin:1em;
+    text-decoration:none;
+    color: inherit;
+    font-weight:bold;
+    /* border:solid var(--tan-2); */
+    /* border-radius: 2em; */
+    /* background-color: var(--blue); */
+    height:2em;
+    width:8em;
+}
+
+.nav .navlinks .link:hover{
+    margin:1em;
+    text-decoration:none;
+    color:whitesmoke;
+    font-weight:bold;
+    border:solid var(--tan-2);
+    border-radius: 2em;
+    background-color: var(--blue);
+    height:2em;
+    width:8em;
 }

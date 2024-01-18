@@ -13,36 +13,14 @@ function Navbar({user ,setUser}) {
   }
   return (
     <>
-      <nav style={{display:'flex',justifyContent:'space-between'}}>
+      <nav className="nav">
 
-      
-        <p style={{fontWeight:'bolder'}}>Welcome {user.name}, </p>       
-        
+        <p style={{fontWeight:'bolder'}}>Welcome to MERN MART! </p>       
         
       
-      <div style={{display:'flex',justifyContent:'space-around'}}>
-        <Link to="/orders/new" 
-        style={{
-          marginRight:'1em',
-          textDecoration:'none',
-          color:'inherit',
-          fontWeight:'bold',
-          border:'solid var(--tan-2)',
-          backgroundColor:' var(--blue)',
-          height:'2em',
-          width:'4em',
-        }} >Home</Link> 
-        <Link to="/orders" 
-        style={{
-          marginRight:'1em',
-          textDecoration:'none',
-          color:'inherit',
-          fontWeight:'bold',
-          border:'solid var(--tan-2)',
-          backgroundColor:' var(--blue)',
-          height:'2em',
-          width:'8em',
-          }}>Order History</Link> 
+      <div className="navlinks">
+        <Link to="/orders/new" className="link">Home</Link> 
+        <Link to="/orders" className="link">Order History</Link> 
         {/* <Link to="" onClick={handleLogOut}><button>Log-Out</button></Link> */}
         <UserLogOut user={user} setUser={setUser} />
         </div>
