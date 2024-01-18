@@ -39,7 +39,7 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                   >CHECKOUT</button>
                 }
                 <span>{order.totalQty}</span>
-                <span className={styles.right}>${order.orderTotal.toFixed(2)}</span>
+                <span className={styles.right}>${order.orderTotal}</span>
               </section>
             </>
             :

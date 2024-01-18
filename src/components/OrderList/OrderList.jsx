@@ -1,5 +1,5 @@
 import OrderListProduct from '../OrderListProduct/OrderListProduct';
-import styles from './OrderList.module.css';
+import styles from './OrderList.css';
 
 export default function OrderList({ orders, activeOrder, handleSelectOrder }) {
 const orderProducts = orders.map(o =>

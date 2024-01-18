@@ -1,12 +1,14 @@
-import styles from './MenuListProduct.css';
+import './MenuListProduct.css';
 
 export default function MenuListProduct({ menuProduct, handleAddToOrder }) {
+    // alert(menuProduct)
+    console.log(menuProduct)
   return (
-    <div className={styles.MenuListProduct}>
-      <div className={styles.img + ' ' + 'flex-ctr-ctr'}>{menuProduct.img}</div>
-      <div className={styles.name}>{menuProduct.name}</div>
-      <div className={styles.buy}>
-        <span>${menuProduct.price.toFixed(2)}</span>
+    <div className='MenuListProduct'>
+      <img className='img' src={menuProduct.img} alt={menuProduct.name}/>
+      <div className='name'>{menuProduct.name}</div>
+      <div className='buy'>
+        <span>${menuProduct.price}</span>
         <button className="btn-sm" onClick={() => handleAddToOrder(menuProduct._id)}>
           ADD
         </button>

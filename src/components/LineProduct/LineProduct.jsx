@@ -23,7 +23,7 @@ return (
         >+</button>
       }
     </div>
-    <div className={styles.extPrice}>${lineProduct.extPrice.toFixed(2)}</div>
+    <div className={styles.extPrice}>${lineProduct.extPrice}</div>
   </div>
 );
 }
