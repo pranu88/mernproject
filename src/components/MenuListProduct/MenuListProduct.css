@@ -1,6 +1,7 @@
 .MenuListProduct {
-    width: 100%;
-    display: flex;
+    /* width: 100%; */
+    width: 15%;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3vmin;
@@ -13,8 +14,10 @@
   }
   
   .MenuListProduct .img {
-    height: 8vw;
-    width: 8vw;
+    height: 10vw;
+    /* height: 2px; */
+    /* width: 2px; */
+    width: 10vw;
     font-size: 4vw;
     background-color: var(--tan-1);
     border: .1vmin solid var(--tan-3);
