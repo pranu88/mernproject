@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='header'>
         <Logo/>
-        <input className='searchbar'  type='text' placeholder='Find your favorite products' value=''/>
+        <input className='searchbar'  type='text' placeholder='Find your favorite products' />
     </div>
   )
 }

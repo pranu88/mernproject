@@ -1,5 +1,5 @@
 import MenuListProduct from '../MenuListProduct/MenuListProduct';
-import styles from './MenuList.css';
+import './MenuList.css';
 
 export default function MenuList({ menuProducts, handleAddToOrder }) {
   const products = menuProducts.map(product =>
@@ -10,7 +10,7 @@ export default function MenuList({ menuProducts, handleAddToOrder }) {
     />
   );
   return (
-    <main className={styles.MenuList}>
+    <main className='menulist'>
       {products}
     </main>
   );

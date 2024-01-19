@@ -1,8 +1,12 @@
-.MenuList {
+.menulist {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-color: var(--tan-1);
+    /* background-color: black; */
     border: .1vmin solid var(--tan-3);
     border-radius: 2vmin;
-    margin: 3vmin 0;
+    /* margin: 3vmin 3vmin; */
     padding: 3vmin;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     }

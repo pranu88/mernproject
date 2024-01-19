@@ -31,7 +31,7 @@
     font-weight:bold;
     border:solid var(--tan-2);
     border-radius: 2em;
-    background-color: var(--blue);
+    background-color: var(--text-dark);
     height:2em;
     width:8em;
 }

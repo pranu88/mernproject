@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import * as productsAPI from '../../utilities/products-api';
 import * as ordersAPI from '../../utilities/order-api';
-import styles from './NewOrderPage.css';
+import './NewOrderPage.css';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../components/Logo/Logo';
 import MenuList from '../../components/MenuList/MenuList';
@@ -55,7 +55,7 @@ export default function NewOrderPage({ user, setUser }) {
   }
 
   return (
-    <main className={styles.NewOrderPage}>
+    <main className='NewOrderPage'>
       <aside>
         {/* <Logo /> */}
         <CategoryList
@@ -66,10 +66,12 @@ export default function NewOrderPage({ user, setUser }) {
         {/* <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link> */}
         {/* <UserLogOut user={user} setUser={setUser} /> */}
       </aside>
+      <aside className='menulist'>
       <MenuList
         menuProducts={menuProducts.filter(product => product.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder}
       />
+      </aside>
       {/* <OrderDetail
         order={cart}
         handleChangeQty={handleChangeQty}

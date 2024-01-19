@@ -1,8 +1,9 @@
 .NewOrderPage {
     height: 100%;
     display: grid;
-    grid-template-columns: 1.6fr 3.5fr 3fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1.5fr 4.5fr;
+    /* grid-template-columns: 1.6fr 3.5fr; */
+    /* grid-template-rows: 1fr; */
     background-color: var(--white);
     border-radius: 2vmin;
   }
@@ -14,3 +15,8 @@
     align-items: center;
     margin: 3vmin 2vmin;
   }
+  /* .NewOrderPage aside .menulist{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    
+  } */
