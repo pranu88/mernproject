@@ -1,10 +1,13 @@
 .nav{
     display: flex ;
      justify-content: space-between;
-      background-color: white;
+      background-color: rgb(135, 34, 197);
       margin-top: 1em;
+      margin-bottom: 1em;
       width: 100%; 
       padding: 10px; 
+      position: relative;
+      border-radius: 1em;
 }
 
 .nav .navlinks{
