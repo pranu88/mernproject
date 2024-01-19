@@ -17,12 +17,12 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
     return (
       <div className={styles.OrderDetail}>
         <div className={styles.sectionHeading}>
-          {order.isPaid ?
+          {/* {order.isPaid ?
             <span>ORDER <span className="smaller">{order.orderId}</span></span>
             :
-            <span>NEW ORDER</span>
-          }
-          <span>{new Date(order.updatedAt).toLocaleDateString()}</span>
+            <span>LATEST ORDER</span>
+          } */}
+          {/* <span>{new Date(order.updatedAt).toLocaleDateString()}</span> */}
         </div>
         <div className={`${styles.lineProductContainer} flex-ctr-ctr flex-col scroll-y`}>
           {lineProducts.length ?
@@ -43,7 +43,10 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
               </section>
             </>
             :
-            <div className={styles.hungry}>Cart is Empty!</div>
+            <div className={styles.hungry}>
+              <p>Cart is Empty!</p>
+              <img src="https://hadayalb.com/images/cart-empty.gif" alt="empty cart" className='cartimg'/>
+              </div>
           }
         </div>
       </div>

@@ -2,12 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import * as productsAPI from '../../utilities/products-api';
 import * as ordersAPI from '../../utilities/order-api';
 import  './Cart.css';
-import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../../components/Logo/Logo';
-import MenuList from '../../components/MenuList/MenuList';
-import CategoryList from '../../components/CategoryList/CategoryList';
+import {  useNavigate } from 'react-router-dom';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
-import UserLogOut from '../../components/UserLogOut/UserLogOut';
+
 
 export default function Cart({ user, setUser }) {
   const [menuProducts, setMenuProducts] = useState([]);
@@ -19,7 +16,9 @@ export default function Cart({ user, setUser }) {
   useEffect(function() {
     async function getProducts() {
       const products = await productsAPI.getAll();
+
       console.log('products from database :' +products)
+
       categoriesRef.current = products.reduce((cats, product) => {
         const cat = product.category.name;
         return cats.includes(cat) ? cats : [...cats, cat];

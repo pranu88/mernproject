@@ -43,7 +43,9 @@
   --tan-3: #d1dee2;
   --tan-4: #aed1d3;
   --blue: #007Ff7;
-  --text-light: #968c84;
+  /* --text-light: #968c84; */
+  --text-light:#dcccff;
+
   --text-dark: #615954;
 }
 
