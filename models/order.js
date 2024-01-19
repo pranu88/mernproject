@@ -11,7 +11,7 @@ const lineProductSchema = new Schema({
   toJSON:{virtuals:true}  
 });
 
-lineProductSchema.virtual('exPrice').get(function(){
+lineProductSchema.virtual('extPrice').get(function(){
     return this.qty * this.product.price;
 });
 
@@ -26,6 +26,7 @@ const orderSchema = new Schema({
 });
 
 orderSchema.virtual('orderTotal').get(function(){
+  
     return this.lineProducts.reduce((total,product)=>total + product.extPrice ,0);
 })
 
@@ -65,10 +66,12 @@ orderSchema.virtual('totalQty').get(function() {
   
   // Instance method to set an product's qty in the cart (will add product if does not exist)
 orderSchema.methods.setProductQty = function(productId, newQty) {
+  console.log('product'+productId)
     // this keyword is bound to the cart (order doc)
     const cart = this;
     // Find the line product in the cart for the menu product
     const lineProduct = cart.lineProducts.find(lineProduct => lineProduct.product._id.equals(productId));
+    console.log('lineproduct'+lineProduct)
     if (lineProduct && newQty <= 0) {
       // Calling deleteOne, removes itself from the cart.lineProcucts array
       lineProduct.deleteOne();

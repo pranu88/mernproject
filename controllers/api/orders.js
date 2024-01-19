@@ -34,7 +34,11 @@ async function addToCart(req, res) {
 async function setProductQtyInCart(req, res) {
   try{
     const cart = await Order.getCart(req.user._id);
-    await cart.setProductQty(req.body.ProductId, req.body.newQty);
+    console.log('controllers cart'+ cart)
+console.log(req.body)
+    await cart.setProductQty(req.body.productId, req.body.newQty);
+    
+
     res.status(200).json(cart);
   }catch(e){
     res.status(400).json({ msg: e.message });
@@ -57,9 +61,11 @@ async function checkout(req, res) {
 async function history(req, res) {
   // Sort most recent orders first
   try{
+    console.log('before searching the order')
     const orders = await Order
       .find({ user: req.user._id, isPaid: true })
       .sort('-updatedAt').exec();
+      console.log(orders)
     res.status(200).json(orders);
   }catch(e){
     res.status(400).json({ msg: e.message });

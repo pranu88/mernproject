@@ -44,7 +44,10 @@ export default function Cart({ user, setUser }) {
   }
 
   async function handleChangeQty(productId, newQty) {
+    console.log('in cart'+productId)
+    console.log('in cart'+newQty)
     const updatedCart = await ordersAPI.setProductQtyInCart(productId, newQty);
+    console.log('in cart'+updatedCart)
     setCart(updatedCart);
   }
 

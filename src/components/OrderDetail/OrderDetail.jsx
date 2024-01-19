@@ -3,8 +3,9 @@ import LineProduct from '../LineProduct/LineProduct';
 
 // Used to display the details of any order, including the cart (unpaid order)
 export default function OrderDetail({ order, handleChangeQty, handleCheckout }) {
-    if (!order) return null;
 
+    if (!order) return null;
+console.log('inside orderdetail'+handleChangeQty)
     const lineProducts = order.lineProducts.map(product =>
       <LineProduct
         lineProduct={product}
@@ -38,8 +39,8 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
                     disabled={!lineProducts.length}
                   >CHECKOUT</button>
                 }
-                <span>{order.totalQty}</span>
-                <span className={styles.right}>${order.orderTotal}</span>
+                <span>{order.totalQty}</span><br/>
+                <span className={styles.right}>${order.orderTotal.toFixed(2)}</span>
               </section>
             </>
             :

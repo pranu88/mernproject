@@ -9,7 +9,7 @@ return (
     </div>
     <div className="align-rt">
       {/* <div>${order.orderTotal.toFixed(2)}</div> */}
-      <div>${order.orderTotal}</div>
+      <div>${order.orderTotal.toFixed(2)}</div>
       <div className="smaller">{order.totalQty} Product{order.totalQty > 1 ? 's' : ''}</div>
     </div>
   </div>
