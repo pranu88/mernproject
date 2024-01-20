@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { signUp } from '../../utilities/users-service';
-
+import './SignUpForm.css'
 
 export default class SignUpForm extends Component {
   state = {
@@ -26,7 +26,7 @@ export default class SignUpForm extends Component {
         delete formData.confirm;
         const user = await signUp(formData);
         console.log(user)
-
+        alert('Success! LogIn and continue shoping 🙏🏾')
     } catch (error) {
         this.setState({
             error: "Sign Up Failed - Try Again"
@@ -38,8 +38,8 @@ export default class SignUpForm extends Component {
     const disable = this.state.password !== this.state.confirm;
 
     return (
-      <>
-        <div>SignUpForm</div>
+      <div className="signupform">
+        <h1>SignUpForm</h1>
         <div className="form-container">
           <form autoComplete="off" onSubmit={this.handleSubmit} style={{margin:"1em"}}>
             <label>Name</label>
@@ -81,7 +81,7 @@ export default class SignUpForm extends Component {
         </div>
         <p className="error-message">{this.state.error}</p>
         
-      </>
+      </div>
     );
   }
 }
