@@ -12,7 +12,7 @@ import SignUpForm from "./components/SignUpForm/SignUpForm.jsx";
 import OrderHistoryPage from "./pages/OrderHistoryPage/OrderHistoryPage.jsx";
 import NewOrderPage from "./pages/NewOrderPage/NewOrderPage.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
-
+import Footer from "./components/Footer/Footer.jsx";
 
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
         <AuthPage user={user} setUser={setUser}/>
       )}
 
-
+<Footer/>
 
          {/* <Routes>
           <Route path="/" element={<Layout/>} >
