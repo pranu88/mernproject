@@ -2,3 +2,8 @@
     display:flex;
     flex-direction: column;
 }
+
+.signupform .form-container label{
+    color: #248f8f;
+    font-weight: 700;
+}

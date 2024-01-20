@@ -15,8 +15,9 @@
     align-items: center;
     margin: 3vmin 2vmin;
   }
-  /* .NewOrderPage aside .menulist{
-    display: grid;
+   /* .menulist{
+     display: grid;
     grid-template-columns: auto auto auto ;
-    
-  } */
+      border:solid black 
+   }*/
+   

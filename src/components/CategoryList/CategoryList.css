@@ -15,7 +15,8 @@
     
     .CategoryList li:hover:not(.active) {
     cursor: pointer;
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
+    background-color: #239090;
     color: var(--white);
     }
     
