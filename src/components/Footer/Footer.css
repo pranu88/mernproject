@@ -7,3 +7,9 @@
 .footer h3{
     margin-right: 35%;
 }
+.footer .social-icons{
+    width: 15vmin;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid black; */
+}
