@@ -23,8 +23,15 @@
     color: var(--white);
     }
     
-    .CategoryList li.active {
+    .CategoryList li:active {
     color: var(--text-dark);
-    background-color: var(--tan-1);
+    background-color: var(--tan-1);     
     border: .1vmin solid var(--tan-3);
     }
+
+    .CategoryList li:focus {
+        color: var(--text-dark);
+        /* background-color: var(--tan-1); */
+        background-color:  #239090;
+        border: .1vmin solid var(--tan-3);
+        }
