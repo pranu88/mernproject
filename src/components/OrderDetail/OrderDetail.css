@@ -5,6 +5,7 @@
     padding: 3vmin;
     font-size: 2vmin;
     color: var(--text-light);
+    
   }
   
   .OrderDetail .sectionHeading {
@@ -14,6 +15,7 @@
   .OrderDetail .lineProductContainer {
     margin-top: 3vmin;
     justify-content: flex-start;
+    display: flex;
     height: calc(100vh - 18vmin);
     width: 100%;
   }
@@ -21,9 +23,11 @@
   .OrderDetail .total {
     width: 100%;
     display: grid;
-    grid-template-columns: 18.35vw 5.75vw 5.25vw;
+    /* display:flex; */
+    grid-template-columns: 18.35vw 5.75vw 5.25vw;    
     padding: 1vmin 0;
-    color: var(--text-light);
+    color: var(--text-light);    
+    /* color: black; */
     border-top: .1vmin solid var(--tan-3);
   }
   

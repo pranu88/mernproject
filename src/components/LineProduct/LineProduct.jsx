@@ -8,7 +8,7 @@ return (
     <img  style={{width:'10em',height:'10em'}} src={lineProduct.product.img}/>
     <div className="flex-ctr-ctr flex-col">
       <span className="align-ctr">{lineProduct.product.name}</span>
-      <span>{lineProduct.product.price.toFixed(2)}</span>
+      <span>${lineProduct.product.price.toFixed(2)}</span>
       {/* <span>{lineProduct.product.price}</span> */}
     </div>
     <div className='qty' style={{ justifyContent: isPaid && 'center' }}>

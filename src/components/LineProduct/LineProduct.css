@@ -19,7 +19,11 @@
     align-items: center;
     font-size: 1.3vw;
     }
-    
+    .LineProduct .qty span{
+        color: black;
+        margin: 5px;
+    }
+
     .LineProduct .extPrice {
     display: flex;
     justify-content: flex-end;
