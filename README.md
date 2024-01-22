@@ -9,8 +9,8 @@
    
    1. Authentication and Authorisation
    2. CRUD operations
-   3. Blogs
-   4. USer can create an account, write blogs
+   3. User can create an account,and browse products
+   4. User can check previous Order history
   
   ### TECHNOLOGIES USED    
  
