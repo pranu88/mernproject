@@ -37,6 +37,21 @@ Cart
 ![cart wireframe](/public/wireframe4.PNG)
 
 
+### SCREENSHOTS
+
+Auth Page
+![authpage screenshot](/public/project3-1.PNG)
+ 
+ Home Page
+![homepage screenshot](/public/project3-2.PNG)
+ 
+ Order History Page
+![order history page wscreenshot](/public/project3-3.PNG)
+
+Cart 
+![cart screenshot](/public/project3-4.PNG)
+
+
 
 
 
