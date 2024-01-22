@@ -22,7 +22,10 @@ function Navbar({user ,setUser}) {
         <Link to="/orders/new" className="link">Home</Link> 
         <Link to="/orders" className="link">Order History</Link> 
         {/* <Link to="" onClick={handleLogOut}><button>Log-Out</button></Link> */}
-        <Link to="/cart" className="link">Cart </Link>
+        {/* <Link to="/cart" className="link">Cart </Link> */}
+        <Link to="/cart" className="link">
+        <img style={{ width: '2em', height: '2em', mixBlendMode: 'multiply' }} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrn3ynZwtTxWA6B8nBdEX3FF8l_nzRGq-KjA&usqp=CAU"></img>
+           </Link>
         <UserLogOut user={user} setUser={setUser} />
         </div>
       </nav>

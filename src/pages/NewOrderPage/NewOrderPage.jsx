@@ -19,7 +19,7 @@ export default function NewOrderPage({ user, setUser }) {
   useEffect(function() {
     async function getProducts() {
       const products = await productsAPI.getAll();
-      console.log('products from database :' +products)
+      // console.log('products from database :' +products)
       categoriesRef.current = products.reduce((cats, product) => {
         const cat = product.category.name;
         return cats.includes(cat) ? cats : [...cats, cat];
@@ -43,6 +43,7 @@ export default function NewOrderPage({ user, setUser }) {
     console.log('handle order'+productId)
     const updatedCart = await ordersAPI.addProductToCart(productId);
     setCart(updatedCart);
+    alert('Successfully added to cart!! Check your cart !!!')
   }
 
   async function handleChangeQty(productId, newQty) {
