@@ -28,7 +28,7 @@ Auth Page
 ![authpage wireframe](/public/wireframe1.png)
  
  Home Page
-![homepage wireframe](/public/wireframe 2.PNG)
+![homepage wireframe](/public/wireframe2.PNG)
  
  Order History Page
 ![order history page wireframe](/public/wireframe3.PNG)
