@@ -1,3 +1,17 @@
+  APP OVERVIEW
+    
+    
+    The Mern Mart is a full stack MERN APP for eCommerce website !
+    A user can browse products that are available in a website and make a decision to purchase a product by adding to cart.
+    And from the cart, he can make modifications to the cart any time before checkout.
+    
+   APP FEATURES 
+   
+   1. Authentication and Authorisation
+   2. CRUD operations
+   3. Blogs
+   4. USer can create an account, write blogs
+  
   ### TECHNOLOGIES USED    
  
    ![react](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
