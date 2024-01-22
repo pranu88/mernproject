@@ -28,13 +28,13 @@ Auth Page
 ![authpage wireframe](/public/wireframe1.png)
  
  Home Page
-![homepage wireframe](/public/wireframe2.png)
+![homepage wireframe](/public/wireframe 2.PNG)
  
  Order History Page
-![order history page wireframe](/public/wireframe3.png)
+![order history page wireframe](/public/wireframe3.PNG)
 
 Cart 
-![cart wireframe](/public/wireframe4.png)
+![cart wireframe](/public/wireframe4.PNG)
 
 
 
