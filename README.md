@@ -22,6 +22,54 @@
     ![github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
     ![canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?&style=for-the-badge&logo=Canva&logoColor=white) 
 
+### PRE-REQUISITES     
+
+Install the react library
+
+* npm install npm@latest -g
+
+Create the react app
+
+* npx create-react-app app-name
+
+### INSTALLATION
+1. [Clone the repo](https://github.com/pranu88/mernproject.git)
+
+* #### git clone git-hub-repo url
+
+2. Install npm packages
+
+* #### npm install
+
+3. Run the below command in the project directory
+
+* #### `npm run build`
+
+4. Add the proxy in the package.json file
+
+5. Add the database connection details and secret key in .env file
+
+6. In the project directory, you can run:
+
+* #### `npm start`
+
+7. In the project directory install the following:
+
+* #### `npm install mongoose`
+* #### `npm install bcrypt`
+* #### `npm install react-router-dom`
+* #### `npm install jsonwebtoken`
+* #### `npm install react-google-charts`
+
+8. Run the server in the port 3001
+
+* #### `nodemon server`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.    
+
 ### WIREFRAME
 
 Auth Page
