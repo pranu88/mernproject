@@ -102,7 +102,7 @@ Cart
 ### POST MVP
 
 I plan to add the following features the App:
-1. Add a search bar
+1. Add a search 
 2. Add payment type
 
 
