@@ -1,7 +1,8 @@
-.footer{
+ .footer{
     display: flex;
     justify-content: space-between;
     padding:4vmin;
+    margin-top: 0%;
 }
 
 .footer h3{

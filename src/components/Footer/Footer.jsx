@@ -3,7 +3,7 @@ import './Footer.css';
 // import Logo from '../Logo/Logo';
 import img from './M.png'
 function Footer() {
-  return (
+  return (    
     <div className='footer'>
       {/* <Logo/> */}
      <img src={img} alt='logo' style={{width:'15vmin',height:'15vmin'}}/> 
@@ -16,6 +16,7 @@ function Footer() {
      </div>
      </div>
     </div>
+    
   )
 }
 
