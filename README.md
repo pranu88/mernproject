@@ -59,7 +59,6 @@ Create the react app
 * #### `npm install bcrypt`
 * #### `npm install react-router-dom`
 * #### `npm install jsonwebtoken`
-* #### `npm install react-google-charts`
 
 8. Run the server in the port 3001
 
