@@ -51,7 +51,11 @@ Auth Page
 Cart 
 ![cart screenshot](/public/project3-4.PNG)
 
+### POST MVP
 
+I plan to add the following features the App:
+1. Add a search bar
+2. Add payment type
 
 
 
